@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'sen', sans-serif;
+  color: #222222;
+}
+
+header{
+width: 100%;
+height: 88px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: black;
+align-items: center;
+padding-left: 72px;
+padding-right: 72px;
+background: linear-gradient(to right, black 40%, #1a1a2e 60%);
+}
+
+header img{
+  width: 78.43px;
+  height: 24px;
+
+}
+
+header nav a{
+  height: 88px;
+  padding: 32px 24px 32px 24px;
+  font-family: 'sen', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+header nav a:hover{
+  background-color: #5221E6;
+  transition: 1s;
+}
+
+.burgerMenu{
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.robin {
+  background: linear-gradient(to right, black 50%, #1a1a2e 50%);
+  /* Левый цвет: чёрный, правый цвет: тёмно-синий */
+  position: relative;
+  padding-top: 78px;
+  padding-bottom: 84px;
+}
+
+.robin div{
+  display: flex;
+  position: relative;
+}
+
+.robin div img{
+  width: calc(43vw + 198px); /*750-360*/
+  height: calc(40vw + 138px); /*650-288*/
+}
+
+.robin div div{
+  display: flex;
+  flex-direction: row;
+  position: absolute; 
+  transform: translateY(-50%);
+  top: 50%; /* Сдвигаем вниз */
+  left: 30%; 
+  width: calc(46.2vw + 146.7px);
+  height: auto;
+}
+
+.RobinWil{
+  margin-bottom: 32px;
+}
+.Designer{
+  width: 100%;
+}
+
+h1{
+  font-size: calc(5.1vw + 13px);
+  font-weight: 700;
+  line-height: calc(6.1vw + 15.5px);
+  color: white;
+}
+
+.Designer p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: white;
+}
+
+.companies{
+  padding: calc(8vw + 18px) calc(5.7vw - 1.5px);
+  background-color: black;
+}
+ 
+.experience{
+  color: #8491A0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+h2{
+  color: #FFFFFF;
+  font-size: calc(2.5vw + 22.5px); /*55-32*/
+  font-weight: 700;
+  line-height: calc(3.1vw + 27px); /*66.17-38.5*/
+}
+.companies h2{
+  margin-bottom: 40px;
+  width: calc(41vw + 166.7px); /*690-320*/
+}
+
+.past{
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(-1.8vw + 46.6px); /*24-40*/
+}
+
+.past div{
+  width: calc(10.6vw + 280px); /*416-320*/
+  
+}
+
+.past div h3{
+  font-size: 117px;
+  font-weight: 400;
+  line-height: 141px;
+  color: #8491A0;
+}
+
+.past div p{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+}
+
+.next{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8491A0;
+  width: 100%; /*368-320*/
+}
+
+.estetik{
+  width: 50%;
+  background-color: #FFF3E4;
+}
+.ball img{
+  width: calc(40vw + 211px); /*720-360*/
+  height: calc(16.6vw + 388px); /*600-450*/
+}
+
+
+
+@media (max-width:768px) {
+  .burgerMenu{
+    display: block;
+  }
+  header nav{
+    display: none;
+  }
+  .robin div img{
+margin-bottom: 48px;
+  }
+
+  .robin div{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+}
+
