@@ -1,10 +1,12 @@
+@import url('https://fonts.cdnfonts.com/css/sen');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'sen', sans-serif;
+  font-family: 'sen', sans-serif, sans-serif;
   color: #222222;
 }
 
@@ -18,7 +20,7 @@ background-color: black;
 align-items: center;
 padding-left: 72px;
 padding-right: 72px;
-background: linear-gradient(to right, black 40%, #1a1a2e 60%);
+background: linear-gradient(to right, black 30%, #1a1a2e 70%);
 }
 
 header img{
@@ -51,53 +53,41 @@ header nav a:hover{
 
 
 .robin {
-  background: linear-gradient(to right, black 50%, #1a1a2e 50%);
+  background: linear-gradient(to right, black 30%, #1a1a2e 70%);
   /* Левый цвет: чёрный, правый цвет: тёмно-синий */
+  display: flex;
   position: relative;
   padding-top: 78px;
   padding-bottom: 84px;
 }
-
-.robin div{
-  display: flex;
-  position: relative;
-}
-
-.robin div img{
-  width: calc(43vw + 198px); /*750-360*/
+.robinFace {
+  width: calc(43.1vw + 198px); /*750-360*/
   height: calc(40vw + 138px); /*650-288*/
 }
 
-.robin div div{
+.info {
+  position: absolute;
+  right: 30px;
+  bottom: 250px;
   display: flex;
-  flex-direction: row;
-  position: absolute; 
-  transform: translateY(-50%);
-  top: 50%; /* Сдвигаем вниз */
-  left: 30%; 
-  width: calc(46.2vw + 146.7px);
-  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc(1.8vw + 9.3px); /*32-16*/
+  width: calc(46.2vw + 147px); /*738-320*/
 }
 
-.RobinWil{
-  margin-bottom: 32px;
-}
-.Designer{
-  width: 100%;
-}
-
-h1{
-  font-size: calc(5.1vw + 13px);
-  font-weight: 700;
-  line-height: calc(6.1vw + 15.5px);
-  color: white;
+h1 {
+font-weight: 700;
+font-size: calc(5.1vw + 13px); /*78-32*/
+line-height: calc(6.1vw + 15.5px); /*94-38.5*/
+color: white;
 }
 
-.Designer p{
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  color: white;
+.info p{
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+color: white;
 }
 
 .companies{
@@ -126,11 +116,11 @@ h2{
 .past{
   display: flex;
   flex-wrap: wrap;
-  gap: calc(-1.8vw + 46.6px); /*24-40*/
+  gap: calc(3.5vw + 26.7px); /*72-40*/
 }
 
 .past div{
-  width: calc(10.6vw + 280px); /*416-320*/
+  width: calc(5.3vw + 300px); /*368-320*/
   
 }
 
@@ -146,6 +136,7 @@ h2{
   font-weight: 700;
   line-height: 36px;
   color: white;
+  margin-bottom: calc(0.7vw + 13.5px); /*22-16*/
 }
 
 .next{
@@ -153,18 +144,184 @@ h2{
   font-weight: 400;
   line-height: 24px;
   color: #8491A0;
-  width: 100%; /*368-320*/
+  width: calc(5.3vw + 300px); /*368-320*/
 }
 
+
+
+
+.estetikball{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  background-color: #FFF3E4; /* Цвет фона */
+}
 .estetik{
-  width: 50%;
-  background-color: #FFF3E4;
+flex: 1;
+padding-left: calc(5.7vw - 1.5px); /*72-20*/
+display: flex;
+flex-direction: column;
 }
-.ball img{
-  width: calc(40vw + 211px); /*720-360*/
-  height: calc(16.6vw + 388px); /*600-450*/
+.ballhalf{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Обрезает лишнее содержимое */
 }
 
+.estetik h2{
+  color: #222222;
+  margin-top: calc(8vw + 18px); /*120-48*/
+  margin-bottom: 24px;
+}
+.estetik p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #5B6876;
+  width: calc(28.3vw + 214px); /*576-320*/
+  margin-bottom: calc(6vw + 59px); /*134-90.8*/
+}
+
+.estetik a{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+}
+
+.ball{
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Обрезает изображение по размеру блока */
+}
+
+.estetik img{
+  width: 105px;
+}
+
+
+
+.skillist{
+  background-color: black;
+  padding: calc(6.2vw + 40.7px) calc(5.7vw - 1.5px); /*120-64   72-20*/
+  display: flex;
+  gap: calc(2.7vw + 38px); /*72-48*/
+}
+.Skillset h2{
+margin-bottom: calc(0.9vw + 12.6px); /*24-16*/
+}
+.Skillset p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #5B6876;
+  width: calc(5.3vw + 300px); /*368-320*/
+}
+.skillgrid{
+  display: grid;
+  grid-template: 200px 200px / 416px 416px;
+  max-width: 100%;
+  box-sizing: border-box;
+  gap: 24px 48px;
+}
+.skillgrid div img{
+  width: 32px;
+  height: 32px;
+  margin-bottom: 24px;
+}
+.skillgrid div p{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+  margin-bottom: 12px; 
+}
+.skillgrid div span{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8491A0;
+  width: 368px; /*368-320*/
+}
+
+
+.sbre{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 127px;
+  background-color: #000;
+flex-wrap: wrap;
+}
+.mobver{
+  display: none;
+}
+/* .sbrelogo{
+  background-color: black;
+  margin-left: 55px;
+  margin-right: 55px;
+} */
+
+
+.project{
+  background-color: #000;
+  display: flex;
+  padding: calc(6.2vw + 40.8px) calc(5.7vw - 1.5px); /*120-64   72-20*/
+  gap: 24px;
+}
+.projectfirst p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8491A0;
+}
+.projectfirst h2{
+  margin-bottom: 80px;
+  width: calc(31vw + 204px); /*600-320*/
+}
+
+.thepast{
+  background-color: #181823;
+  width: 636px/*calc(35vw + 189px)*/; /*636-320*/
+  height: 830px/*calc(8.4vw + 722.5px)*/; /*830-754*/
+  margin-bottom: 24px; /*24-48*/
+}
+.thepast img{
+  width: 100%;
+  margin-bottom: 40px;
+}
+.thepast p{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+  margin-bottom: 13px;
+  margin-left: 32px;
+}
+.thepast span{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #5B6876;
+  }
+  .thepast div{
+    margin-left: 32px;
+  }
+  .view{
+    width: 260px;
+    border: 2px solid #5221E6;
+    padding: 24px 32px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    margin-left: 219px;
+    margin-top: 91px;
+  }
 
 
 @media (max-width:768px) {
@@ -174,15 +331,57 @@ h2{
   header nav{
     display: none;
   }
-  .robin div img{
-margin-bottom: 48px;
-  }
+ .robin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .robinFace{
+  width: auto;
+  margin-bottom: 48px;
+ }
 
-  .robin div{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+ .info{
+  position: static;
+ }
+ .estetikball{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+ }
+
+
+ .skillist{
+  display: flex;
+  flex-direction: column;
+ }
+ .skillgrid{
+  display: flex;
+  flex-direction: column;
+ }
+ .skillgrid div{
+  margin-bottom: 48px;
+ }
+
+ .sbre {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Два столбца */
+  padding: 60px 60px; /* Уменьшаем внутренние отступы */
+  justify-content: center; /* Центрируем сетку */
+}
+.mobver{
+  display: inline-block;
+}
+.thepast{
+  width: 320px;
+  height: 754px;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  .thepast img{
+    height: 400px;
   }
+}
 }
 
