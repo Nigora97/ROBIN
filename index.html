@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    
     <header>
       <img src="./img/Vector.svg" alt="logo" />
       <nav>
@@ -84,6 +83,78 @@
       </div>
     </section>
 
+    <div id="new-page" style="display: none">
+      <h2>More About Me</h2>
+      <p>
+        Hi! I’m Robin Williams, a passionate designer and creative thinker. Over
+        the past 10 years, I’ve worked with some of the biggest names in the
+        tech and design industries, creating impactful experiences and
+        meaningful connections through my work.
+      </p>
+
+      <!-- Раздел с биографией -->
+      <section>
+        <h3>Biography</h3>
+        <p>
+          Born and raised in Italy, I always found inspiration in art, nature,
+          and culture. I studied design at the University of Milan and started
+          my career with Dribbble. My journey led me to work with companies like
+          Facebook and Google, where I specialized in product design and
+          interaction design.
+        </p>
+      </section>
+
+      <!-- Раздел с навыками -->
+      <section>
+        <h3>Skills</h3>
+        <ul>
+          <li>Product Design</li>
+          <li>Interaction Design</li>
+          <li>Graphic Design</li>
+          <li>Prototyping (Figma, Adobe XD, Sketch)</li>
+          <li>UX Research and Strategy</li>
+          <li>Creative Thinking</li>
+        </ul>
+      </section>
+
+      <!-- Раздел с проектами -->
+      <section>
+        <h3>Key Projects</h3>
+        <ol>
+          <li>
+            <strong>Google Play Redesign:</strong> Led the interaction design
+            team to create a more intuitive and user-friendly interface.
+          </li>
+          <li>
+            <strong>Facebook Internal Tools:</strong> Designed and implemented
+            tools that increased employee productivity by 20%.
+          </li>
+          <li>
+            <strong>Dribbble Illustrations:</strong> Created hundreds of unique
+            and engaging illustrations for the platform.
+          </li>
+        </ol>
+      </section>
+
+      <!-- Раздел с цитатой -->
+      <section>
+        <blockquote>
+          “Design is not just what it looks like and feels like. Design is how
+          it works.” — Steve Jobs
+        </blockquote>
+      </section>
+
+      <!-- Контакты -->
+      <section>
+        <h3>Contact</h3>
+        <p>Email: robin.williams@example.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/robin-williams</a></p>
+        <p>Portfolio: <a href="#">www.robinportfolio.com</a></p>
+      </section>
+
+      <button id="back-to-main">Go Back</button>
+    </div>
+
     <section class="skillist">
       <div class="Skillset">
         <h2>Skillset</h2>
@@ -131,18 +202,18 @@
     </section>
 
     <marquee class="marqlogo" behavior="" direction="" id="first">
-    <section class="sbrelogo">
-      <nav class="sbre">
-        <a href=""><img src="./img/sbre.png" alt="" /></a>
-        <a href=""><img src="./img/epiq.png" alt="" /></a>
-        <a href=""><img src="./img/f.svg" alt="" /></a>
-        <a href=""><img src="./img/barg.svg" alt="" /></a>
-        <a class="mobver" href=""><img src="./img/place.png" alt="" /></a>
-        <a class="mobver" href=""><img src="./img/share.png" alt="" /></a>
-      </nav>
-    </section>
-</marquee>
-
+      <section class="sbrelogo">
+        <nav class="sbre">
+          <a href=""><img src="./img/sbre.png" alt="" /></a>
+          <a href=""><img src="./img/epiq.png" alt="" /></a>
+          <a href=""><img src="./img/f.svg" alt="" /></a>
+          <a href=""><img src="./img/barg.svg" alt="" /></a>
+          <a class="mobver" href=""><img src="./img/place.png" alt="" /></a>
+          <a class="mobver" href=""><img src="./img/share.png" alt="" /></a>
+        </nav>
+      </section>
+    </marquee>
+    
 
     <section class="project">
       <div class="projectfirst">
@@ -156,7 +227,7 @@
               >I worked with the guys at CBRE to redesign their entire website
               and mobile app fro both Android and iOS. This project lasted for 4
               months and was a very challenging one.
-              </span>
+            </span>
           </div>
         </div>
         <div class="thepast">
@@ -194,7 +265,33 @@
             >
           </div>
         </div>
-        <button class="view">VIEW ALL PROJECTS</button>
+        <!-- Кнопка для открытия модального окна -->
+        <button class="view" onclick="openModal()">VIEW ALL PROJECTS</button>
+        <!-- Модальное окно с дополнительными проектами -->
+        <div id="projectsModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Additional Projects</h2>
+            <div class="additional-projects">
+              <div class="project-item">
+                <img src="./img/my1.png" alt="" />
+                <p>New Project 1</p>
+              </div>
+              <div class="project-item">
+                <img src="./img/my2.png" alt="" />
+                <p>New Project 2</p>
+              </div>
+              <div class="project-item">
+                <img src="./img/my3.png" alt="" />
+                <p>New Project 3</p>
+              </div>
+              <div class="project-item">
+                <img src="./img/my4.png" alt="" />
+                <p>New Project 4</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -206,7 +303,9 @@
           that you check out my Instagram. I’m an avid traveller and I capture
           the best moments that I would love to cherish with the world
         </p>
-        <a href="#" class="followmeon">Follow me on IG</a>
+        <a href="https://www.instagram.com/robinwilliams/" class="followmeon"
+          >Follow me on IG</a
+        >
         <img src="./img/Line 1.png" alt="" />
       </div>
       <div class="plainhalf">
@@ -222,8 +321,8 @@
       </p>
       <a href="">Follow me on Dribbble</a>
       <img class="lineunder" src="./img/Line 1.png" alt="" />
-      
-      <div><img class="skrintop" src="./img/skrintop.png" alt="" />
+      <div class="image-container">
+        <img class="skrintop" src="./img/skrintop.png" alt="" />
         <img class="skrin3" src="./img/skrin3.png" alt="" />
       </div>
       <img class="skrinbottom" src="./img/skrinbottom.png" alt="" />
@@ -244,113 +343,177 @@
         <div>
           <img src="./img/pip1.png" alt="" />
           <div class="pspan">
-          <p>‘’Robin is one of the best designers I have worked with in my entire life. He is a designer who is very capable of taking up complex projects and delivers impeccable design.’’</p>
-          <span>Richard Owens</span>
-          <span>CEO, Company 1</span>
+            <p>
+              ‘’Robin is one of the best designers I have worked with in my
+              entire life. He is a designer who is very capable of taking up
+              complex projects and delivers impeccable design.’’
+            </p>
+            <span>Richard Owens</span>
+            <span>CEO, Company 1</span>
+          </div>
         </div>
-    </div>
         <div>
           <img src="./img/pip2.png" alt="" />
           <div class="pspan">
-          <p>‘’I think Robin has an incredible gift. It has been an absolute pleasure to work with a designer of this caliber.’’</p>
-          <span>Emily Parker</span>
-          <span>CEO, Company 2</span>
-        </div>
+            <p>
+              ‘’I think Robin has an incredible gift. It has been an absolute
+              pleasure to work with a designer of this caliber.’’
+            </p>
+            <span>Emily Parker</span>
+            <span>CEO, Company 2</span>
+          </div>
         </div>
         <div>
           <img src="./img/pip3 (1).png" alt="" />
           <div class="pspan">
-          <p>‘’All I can say that, Robin is a phenomenal designer. The wavelength at which he thinks is astoundaing. I love the focus, passion and attention to detial in the design.’’</p>
-          <span>Vincent  Rudd</span>
-          <span>CEO, Company 1</span>
-        </div>
+            <p>
+              ‘’All I can say that, Robin is a phenomenal designer. The
+              wavelength at which he thinks is astoundaing. I love the focus,
+              passion and attention to detial in the design.’’
+            </p>
+            <span>Vincent Rudd</span>
+            <span>CEO, Company 1</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="photography">
-<h2>Photography</h2>
-<p>Here is a collection of my best travel pictures that I took while travelling places all around the world. </p>
-<div class="country">
-<button>ITALY</button>
-<button>AUSTRALIA</button>
-<button>INDIA</button>
-<button>BRAZIL</button>
-</div>
-<div class="italy">
-    <img src="https://cdn.pixabay.com/photo/2019/06/24/16/43/mountain-4296464_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2022/07/22/07/48/torre-7337520_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2015/06/01/23/43/pasta-794464_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2022/09/11/15/56/river-7447346_640.jpg" alt="">
-</div>
-<div class="australia">
-    <img src="https://cdn.pixabay.com/photo/2015/07/21/15/19/koala-854021_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2015/12/22/14/39/lighthouse-1104195_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2020/02/22/11/45/kangaroo-4870351_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2024/08/07/12/00/land-8951873_640.jpg" alt="">
-</div>
-<div class="india">
-    <img src="https://cdn.pixabay.com/photo/2023/01/15/13/26/boat-7720150_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2015/12/10/14/27/old-man-1086437_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2019/02/18/11/28/mehendi-4004294_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2020/07/10/18/53/elephant-5391723_640.jpg" alt="">
-</div>
-<div class="brazil">
-    <img src="https://cdn.pixabay.com/photo/2019/04/18/18/40/soccer-4137689_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2012/07/03/22/55/statue-51320_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2020/04/13/22/27/waterfall-5040222_640.jpg" alt="">
-    <img src="https://cdn.pixabay.com/photo/2014/12/09/13/54/chocolate-561971_640.jpg" alt="">
-</div>
+      <h2>Photography</h2>
+      <p>
+        Here is a collection of my best travel pictures that I took while
+        travelling places all around the world.
+      </p>
+      <div class="country">
+        <button>ITALY</button>
+        <button>AUSTRALIA</button>
+        <button>INDIA</button>
+        <button>BRAZIL</button>
+      </div>
+      <div class="italy">
+        <img
+          src="https://cdn.pixabay.com/photo/2019/06/24/16/43/mountain-4296464_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2022/07/22/07/48/torre-7337520_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2015/06/01/23/43/pasta-794464_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2022/09/11/15/56/river-7447346_640.jpg"
+          alt=""
+        />
+      </div>
+      <div class="australia">
+        <img
+          src="https://cdn.pixabay.com/photo/2015/07/21/15/19/koala-854021_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2015/12/22/14/39/lighthouse-1104195_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2020/02/22/11/45/kangaroo-4870351_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2024/08/07/12/00/land-8951873_640.jpg"
+          alt=""
+        />
+      </div>
+      <div class="india">
+        <img
+          src="https://cdn.pixabay.com/photo/2023/01/15/13/26/boat-7720150_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2015/12/10/14/27/old-man-1086437_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2019/02/18/11/28/mehendi-4004294_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2020/07/10/18/53/elephant-5391723_640.jpg"
+          alt=""
+        />
+      </div>
+      <div class="brazil">
+        <img
+          src="https://cdn.pixabay.com/photo/2019/04/18/18/40/soccer-4137689_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2012/07/03/22/55/statue-51320_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2020/04/13/22/27/waterfall-5040222_640.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2014/12/09/13/54/chocolate-561971_640.jpg"
+          alt=""
+        />
+      </div>
     </section>
 
     <section class="contact">
-        <div class="contactleft">
-            <h2>Let’s get started</h2>
-            <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
-        </div>
-        <div class="contactright">
-            <form action="#">
-                <label for="name">Name</label>
-                <input id="name"  required />
-          
-                <label for="email">Email</label>
-                <input id="email"  required />
-          
-                <label for="message">Message</label>
-                <textarea id="message"  required></textarea>
-                <button type="submit">LET’S GET STARTED</button>
-            </form>
-        </div>
+      <div class="contactleft">
+        <h2>Let’s get started</h2>
+        <p>
+          Now that you know a lot about me, let me know if you are interested to
+          work with me.
+        </p>
+      </div>
+      <div class="contactright">
+        <form action="#">
+          <label for="name">Name</label>
+          <input id="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" required></textarea>
+          <button type="submit">LET’S GET STARTED</button>
+        </form>
+      </div>
     </section>
 
-
     <footer>
-        <div class="foot">
-            <div class="footleft">
-                <img src="./img/robinw.png" alt="">
-                <div class="icon">
-                    <img src="./img/bird.svg" alt="">
-                    <img src="./img/earth.svg" alt="">
-                    <img src="./img/in.svg" alt="">
-                </div>
-            </div>
-           <div class="footright">
-            <div>
-                <p>Home</p>
-                <p>About</p>
-                <p>Work</p>
-                <p>Process</p>
-            </div>
-            <div>
-                <p>Store</p>
-                <p>Blog</p>
-                <p>Reading List</p>
-            </div>
-           </div>
+      <div class="foot">
+        <div class="footleft">
+          <img src="./img/robinw.png" alt="" />
+          <div class="icon">
+            <img src="./img/bird.svg" alt="" />
+            <img src="./img/earth.svg" alt="" />
+            <img src="./img/in.svg" alt="" />
+          </div>
         </div>
-        <span>Not Copyright 2020 • Robin Williams. Webflow cloneable</span>
+        <div class="footright">
+          <div>
+            <p>Home</p>
+            <p>About</p>
+            <p>Work</p>
+            <p>Process</p>
+          </div>
+          <div>
+            <p>Store</p>
+            <p>Blog</p>
+            <p>Reading List</p>
+          </div>
+        </div>
+      </div>
+      <span>Not Copyright 2020 • Robin Williams. Webflow cloneable</span>
     </footer>
-    
+
     <script src="./index.js"></script>
   </body>
 </html>

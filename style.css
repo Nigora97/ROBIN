@@ -42,7 +42,8 @@ header nav a {
 header nav a:hover {
   font-size: 18px;
   background-color: #5221e6;
-  transition: 0.3s;}
+  transition: 0.3s;
+}
 
 .burgerMenu {
   display: none;
@@ -74,7 +75,7 @@ header nav a:hover {
   gap: calc(1.5vw + 10.7px); /*32-16*/
   width: calc(40vw + 177px); /*738-320*/
   z-index: 1;
-  left: 550px;
+  right: 20px;
 }
 
 h1 {
@@ -89,6 +90,16 @@ h1 {
   font-size: 18px;
   line-height: 27px;
   color: white;
+}
+.info h1:hover {
+  color: #ff8c00;
+  transform: scale(1.02);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.info p:hover {
+  color: #d4af37;
+  transition: color 0.3s ease;
 }
 
 .companies {
@@ -188,7 +199,10 @@ h2 {
   line-height: 24px;
   color: black;
 }
-
+.estetik a:hover {
+  font-size: 18px; /* Увеличение размера шрифта при наведении */
+  color: #5221e6; /* Изменение цвета текста на фиолетовый */
+}
 .ball {
   width: 100%;
   height: auto;
@@ -196,7 +210,68 @@ h2 {
 }
 
 .estetik img {
-  width: 105px;
+  width: 120px;
+}
+
+#new-page {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff3e4;
+  color: #333;
+  overflow-y: auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+#new-page h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#new-page h3 {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+#new-page p,
+#new-page li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+#new-page ul,
+#new-page ol {
+  margin: 16px 0 32px;
+  padding-left: 20px;
+}
+
+#new-page blockquote {
+  margin: 40px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-left: 4px solid #ccc;
+  font-style: italic;
+}
+
+#back-to-main {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #5221e6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#back-to-main:hover {
+  background-color: #3c1bb2;
 }
 
 .skillist {
@@ -217,7 +292,7 @@ h2 {
 }
 .skillgrid {
   display: grid;
-  grid-template: 200px 200px / 316px 316px; 
+  grid-template: 200px 200px / 316px 316px;
   max-width: 100%;
   box-sizing: border-box;
   gap: 24px 48px;
@@ -251,13 +326,13 @@ h2 {
   flex-wrap: wrap;
 }
 
-.sbrelogo{
+.sbrelogo {
   background-color: black;
   margin-left: 55px;
   margin-right: 55px;
-} 
+}
 
-#first{
+#first {
   background-color: #000;
 }
 
@@ -320,9 +395,68 @@ h2 {
   margin-top: 91px;
 }
 
-.view:hover{
+.view:hover {
   background-color: #5221e6;
   transition: 1s;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.additional-projects {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  background-color: #181823;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+}
+
+.project-item p {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .estetiplain {
@@ -345,7 +479,6 @@ h2 {
   align-items: center;
   overflow: hidden; /* Обрезает лишнее содержимое */
 }
-
 .instagram h2 {
   color: #222222;
   margin-top: calc(6.7vw + 24px); /*120-48*/
@@ -359,20 +492,21 @@ h2 {
   width: calc(23.7vw + 234.7px); /*576-320*/
   margin-bottom: calc(4vw + 76.5px); /*134-90.8*/
 }
-
 .instagram a {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: black;
+  transition: transform 0.3s ease; /* Плавное изменение размера */
 }
-
+.followmeon:hover {
+  font-size: 18px;
+}
 .plain {
   width: 100%;
   height: auto;
   object-fit: cover; /* Обрезает изображение по размеру блока */
 }
-
 .instagram img {
   width: 105px;
 }
@@ -400,12 +534,15 @@ h2 {
   line-height: 24px;
   color: #ffffff;
 }
+.Dribbble a:hover {
+  cursor: pointer;
+  font-size: 18px;
+}
 .lineunder {
   width: 171px;
   margin-bottom: calc(5.2vw + 45px); /*120-64*/
 }
 .skrintop {
-  position: relative;
   width: calc(70vw + 68px); /*1076-320*/
   height: 36px;
 }
@@ -417,25 +554,29 @@ h2 {
   width: 48px;
   height: 12px;
   position: absolute;
+  left: 10px; /* Центрируем по горизонтали */
+  top: 10px;
+}
+.image-container {
+  position: relative;
 }
 
-
-.thisis{
-display: flex;
-background-color: black;
-gap: calc(0.7vw + 61px); /*72-64*/
-padding: calc(6.7vw + 24px) calc(4.8vw + 2.7px); /*120-48   72-20*/
+.thisis {
+  display: flex;
+  background-color: black;
+  gap: calc(0.7vw + 61px); /*72-64*/
+  padding: calc(6.7vw + 24px) calc(4.8vw + 2.7px); /*120-48   72-20*/
 }
-.thisisleft{
+.thisisleft {
   width: calc(29vw + 214.7px); /*636-320*/
   display: flex;
   flex-direction: column;
 }
-.thisisleft h2{
+.thisisleft h2 {
   margin-bottom: calc(0.7vw + 13px); /*24-16*/
   width: calc(24.8vw + 231px); /*588-320*/
 }
-.thisisleft p{
+.thisisleft p {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -443,57 +584,57 @@ padding: calc(6.7vw + 24px) calc(4.8vw + 2.7px); /*120-48   72-20*/
   margin-bottom: 40px;
   width: calc(24.8vw + 231px); /*588-320*/
 }
-.thisisleft span{
+.thisisleft span {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #ffffff;
 }
-.thisisleft img{
+.thisisleft img {
   width: 146px;
 }
-.thisisright{
+.thisisright {
   width: calc(29vw + 232px); /*636-333*/
   height: auto;
 }
-.thisisright div img{
+.thisisright div img {
   width: 100%; /*636-333*/
   height: 360px;
 }
-.thisisright div{
+.thisisright div {
   margin-bottom: calc(6.7vw + 24px); /*120-48*/
 }
-.thisisright div:last-child{
+.thisisright div:last-child {
   margin-bottom: 0;
 }
-.pspan{
+.pspan {
   display: flex;
   flex-direction: column;
   margin: calc(3vw + 21px) calc(3vw + 21px); /*64-32*/
 }
-.pspan p{
+.pspan p {
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
   color: white;
   margin-bottom: 64px;
 }
-.pspan span{
+.pspan span {
   font-size: 18px;
   font-weight: 700;
   line-height: 27px;
-  color: #5B6876;
+  color: #5b6876;
   margin-bottom: 4px;
 }
 
-.photography{
+.photography {
   background-color: black;
   padding: calc(6.7vw + 24px) calc(2.8vw + 10px); /*120-48   50-20*/
 }
-.photography h2{
+.photography h2 {
   margin-bottom: 24px;
 }
-.photography p{
+.photography p {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -501,10 +642,10 @@ padding: calc(6.7vw + 24px) calc(4.8vw + 2.7px); /*120-48   72-20*/
   margin-bottom: calc(2.2vw + 32px); /*64-40*/
   width: calc(24.8vw + 231px); /*588-320*/
 }
-.country{
+.country {
   margin-bottom: 40px;
 }
-.country button{
+.country button {
   height: 51px;
   padding: 12px 16px;
   font-family: "sen", sans-serif;
@@ -512,39 +653,39 @@ padding: calc(6.7vw + 24px) calc(4.8vw + 2.7px); /*120-48   72-20*/
   line-height: 27px;
   font-weight: 700;
   text-decoration: none;
-  color: white; 
+  color: white;
   border: 2px solid #5221e6;
   cursor: pointer;
-  background-color:#000;
+  background-color: #000;
   margin-right: 24px;
 }
-.country button:hover{
+.country button:hover {
   background-color: #5221e6;
   transition: 1s;
 }
-.photography img{
+.photography img {
   width: 306px;
-  height: 420px ;
+  height: 420px;
   margin-right: 24px;
 }
-.photography img:last-child{
+.photography img:last-child {
   margin-right: 0;
 }
 
-.contact{
+.contact {
   padding: calc(6.7vw + 24px) calc(15vw - 33px); /*120-48  180-20*/
   background-color: #000;
   display: flex;
   gap: 24px;
 }
-.contactleft p{
+.contactleft p {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   color: #8491a0;
   width: calc(19vw + 251px); /*526-320*/
 }
-.contactleft h2{
+.contactleft h2 {
   margin-bottom: 24px;
 }
 form {
@@ -552,7 +693,7 @@ form {
   flex-direction: column;
   width: calc(19vw + 251px); /*526-320*/
 }
-form label{
+form label {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -567,18 +708,17 @@ form textarea {
   font-size: 16px;
   margin-bottom: 40px;
   border: none;
-
 }
-form input{
+form input {
   height: 50px;
 }
-form textarea{
+form textarea {
   height: 100px;
 }
 
 form button {
   height: 75px;
-  background-color: #5221E6; 
+  background-color: #5221e6;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -589,55 +729,59 @@ form button {
 }
 
 form button:hover {
-  background-color: #5a4dcf; 
+  background-color: #5a4dcf;
 }
 
-footer{
+footer {
   background-color: black;
-  padding: calc(3vw + 37px) calc(4.8vw + 2.7px);  /*80-48  72-20*/
+  padding: calc(3vw + 37px) calc(4.8vw + 2.7px); /*80-48  72-20*/
 }
-.foot{
+.foot {
   display: flex;
   gap: calc(55vw - 149px); /*640-48*/
   margin-bottom: 48px;
 }
-.footleft img{
+.footleft img {
   width: 131px;
   height: 40px;
   margin-bottom: 32px;
 }
-.icon img{
-width: 18px;
-margin-right: 16px;
+.icon img {
+  width: 18px;
+  margin-right: 16px;
 }
-.footright{
+.footright {
   display: flex;
   gap: 24px;
 }
-.footright p{
+.footright p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: white;
   height: 48px;
 }
-.footright div{
+.footright p:hover {
+  color: #5a4dcf;
+  cursor: pointer;
+  font-size: 18px;
+}
+.footright div {
   width: 196px;
 }
-footer span{
+footer span {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #8491A0;
+  color: #8491a0;
 }
-
 
 @media (max-width: 768px) {
   .burgerMenu {
     display: block;
     cursor: pointer;
   }
-  header nav{
+  header nav {
     display: none;
     flex-direction: column; /* Меню становится вертикальным */
     position: absolute;
@@ -647,12 +791,11 @@ footer span{
     padding: 10px 20px;
     border-radius: 8px;
     z-index: 1000; /* Убедитесь, что меню видно */
-
   }
   header nav.active {
     display: flex; /* Показываем меню при активации */
   }
-  
+
   .robin {
     display: flex;
     flex-direction: column;
@@ -714,45 +857,40 @@ footer span{
     flex-direction: column;
     gap: 48px;
   }
-  .skrin3 {
-    top: 375px;
-    left: 30px;
-  }
-  .thisis{
+
+  .thisis {
     display: flex;
     flex-direction: column;
   }
-  .thisisright div img{
+  .thisisright div img {
     width: 100%;
   }
-  .country button{
+  .country button {
     width: 148px;
     height: 51px;
     margin-right: 0;
     margin-bottom: 24px;
   }
-  .country{
+  .country {
     margin-bottom: 0;
   }
-  .photography img{
+  .photography img {
     margin-right: 0;
     margin-bottom: 24px;
     width: 100%;
   }
-  .contact{
+  .contact {
     flex-direction: column;
   }
-  .marqlogo{
+  .marqlogo {
     animation-play-state: paused; /* Останавливаем анимацию */
-    overflow: hidden; /* Убираем прокрутку */    
+    overflow: hidden; /* Убираем прокрутку */
   }
   .foot {
     flex-direction: column;
   }
-  .footright{
+  .footright {
     flex-direction: column;
     gap: 0;
   }
-
-
 }
