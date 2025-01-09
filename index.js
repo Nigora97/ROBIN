@@ -71,5 +71,30 @@ function openModal() {
       closeModal();
     }
   }
-  
-  
+
+
+
+
+  function toggleMarquee() {
+    const marquee = document.getElementById("first");
+
+    if (marquee) {
+      if (window.innerWidth < 499) {
+        // Скрыть элемент и остановить движение
+
+        if (typeof marquee.stop === "function") {
+          marquee.stop(); // Останавливаем, если метод доступен
+        }
+      } else {
+        // Показать элемент и запустить движение
+        marquee.style.display = "block";
+        if (typeof marquee.start === "function") {
+          marquee.start(); // Запускаем, если метод доступен
+        }
+      }
+    }
+  }
+
+  // Убедитесь, что функция выполняется после загрузки всей страницы
+  window.addEventListener("load", toggleMarquee);
+  window.addEventListener("resize", toggleMarquee);

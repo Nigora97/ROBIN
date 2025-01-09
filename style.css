@@ -10,6 +10,7 @@
   color: #222222;
 }
 
+/* header */
 header {
   width: 100%;
   height: 88px;
@@ -52,6 +53,9 @@ header nav a:hover {
   position: relative;
   z-index: 1000;
 }
+/* header */
+
+/* robin */
 .robin {
   background: linear-gradient(to right, black 30%, #1a1a2e 70%);
   /* Левый цвет: чёрный, правый цвет: тёмно-синий */
@@ -60,6 +64,7 @@ header nav a:hover {
   padding-top: 78px;
   padding-bottom: calc(3.3vw + 36px); /*84-48*/
 }
+
 .robinFace {
   width: calc(36vw + 230px); /*750-360*/
   height: calc(33.5vw + 167px); /*650-288*/
@@ -91,6 +96,7 @@ h1 {
   line-height: 27px;
   color: white;
 }
+
 .info h1:hover {
   color: #ff8c00;
   transform: scale(1.02);
@@ -101,7 +107,9 @@ h1 {
   color: #d4af37;
   transition: color 0.3s ease;
 }
+/* robin */
 
+/* companies */
 .companies {
   padding: calc(6.7vw + 24px) calc(4.8vw - 2.7px);
   background-color: black;
@@ -114,12 +122,14 @@ h1 {
   line-height: 24px;
   margin-bottom: 8px;
 }
+
 h2 {
   color: #ffffff;
   font-size: calc(2.1vw + 24px); /*55-32*/
   font-weight: 700;
   line-height: calc(2.6vw + 29px); /*66.17-38.5*/
 }
+
 .companies h2 {
   margin-bottom: 40px;
   width: calc(34vw + 197px); /*690-320*/
@@ -157,7 +167,9 @@ h2 {
   color: #8491a0;
   width: calc(4.4vw + 304px); /*368-320*/
 }
+/* companies */
 
+/* estetikball */
 .estetikball {
   display: flex;
   flex-direction: row;
@@ -165,12 +177,14 @@ h2 {
   justify-content: center;
   background-color: #fff3e4;
 }
+
 .estetik {
   flex: 1;
   padding-left: calc(4.8vw - 2.7px); /*72-20*/
   display: flex;
   flex-direction: column;
 }
+
 .ballhalf {
   flex: 1;
   display: flex;
@@ -184,6 +198,7 @@ h2 {
   margin-top: calc(6.7vw + 24px); /*120-48*/
   margin-bottom: 24px;
 }
+
 .estetik p {
   font-size: 18px;
   font-weight: 400;
@@ -199,10 +214,12 @@ h2 {
   line-height: 24px;
   color: black;
 }
+
 .estetik a:hover {
   font-size: 18px; /* Увеличение размера шрифта при наведении */
   color: #5221e6; /* Изменение цвета текста на фиолетовый */
 }
+
 .ball {
   width: 100%;
   height: auto;
@@ -212,7 +229,9 @@ h2 {
 .estetik img {
   width: 120px;
 }
+/* estetikball */
 
+/* new-page */
 #new-page {
   display: none;
   position: fixed;
@@ -273,7 +292,10 @@ h2 {
 #back-to-main:hover {
   background-color: #3c1bb2;
 }
+/* new-page */
 
+
+/* skillist */
 .skillist {
   background-color: black;
   padding: calc(5.2vw + 45px) calc(4.8vw - 2.7px); /*120-64   72-20*/
@@ -316,7 +338,10 @@ h2 {
   color: #8491a0;
   width: 368px; /*368-320*/
 }
+/* skillist */
 
+
+/* marqlogo */
 .sbre {
   display: flex;
   justify-content: space-between;
@@ -335,7 +360,10 @@ h2 {
 #first {
   background-color: #000;
 }
+/* marqlogo */
 
+
+/* project */
 .project {
   background-color: #000;
   display: flex;
@@ -458,7 +486,10 @@ h2 {
   font-size: 18px;
   font-weight: 700;
 }
+/* project */
 
+
+/* estetiplain */
 .estetiplain {
   display: flex;
   flex-direction: row;
@@ -510,7 +541,10 @@ h2 {
 .instagram img {
   width: 105px;
 }
+/* estetiplain */
 
+
+/* Dribbble */
 .Dribbble {
   background-color: black;
   padding: calc(5.2vw + 45px) calc(15vw - 34px); /*120-64   182-20*/
@@ -560,7 +594,10 @@ h2 {
 .image-container {
   position: relative;
 }
+/* Dribbble */
 
+
+/* thisis */
 .thisis {
   display: flex;
   background-color: black;
@@ -589,6 +626,10 @@ h2 {
   font-weight: 400;
   line-height: 24px;
   color: #ffffff;
+}
+.thisisleft span:hover {
+  cursor: pointer;
+  font-size: 18px;
 }
 .thisisleft img {
   width: 146px;
@@ -626,6 +667,8 @@ h2 {
   color: #5b6876;
   margin-bottom: 4px;
 }
+/* thisis */
+
 
 .photography {
   background-color: black;
